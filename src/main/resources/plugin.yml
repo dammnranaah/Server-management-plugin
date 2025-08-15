@@ -1,0 +1,140 @@
+name: AdminEssentials
+main: com.dammnranaah.adminessentials.AdminEssentials
+version: 1.0.0
+author: dammnranaah
+commands:
+  vanish:
+    description: Become invisible to other players.
+    usage: /vanish
+    permission: adminessentials.vanish
+  freeze:
+    description: Freeze a player in place.
+    usage: /freeze <player>
+    permission: adminessentials.freeze
+  kick:
+    description: Kick a player with an optional reason.
+    usage: /kick <player> [reason]
+    permission: adminessentials.kick
+  ban:
+    description: Ban a player permanently or with a duration.
+    usage: /ban <player> [reason]
+    permission: adminessentials.ban
+  tempban:
+    description: Temporarily ban a player.
+    usage: /tempban <player> <duration>
+    permission: adminessentials.tempban
+  mute:
+    description: Prevent a player from chatting.
+    usage: /mute <player> [duration]
+    permission: adminessentials.mute
+  unmute:
+    description: Remove chat restrictions from a player.
+    usage: /unmute <player>
+    permission: adminessentials.unmute
+  jail:
+    description: Place a player in a jail area.
+    usage: /jail <player>
+    permission: adminessentials.jail
+  unjail:
+    description: Release a player from jail.
+    usage: /unjail <player>
+    permission: adminessentials.unjail
+  motd:
+    description: Display the server MOTD.
+    usage: /motd
+    permission: adminessentials.motd
+  who:
+    description: List online players.
+    usage: /who
+    permission: adminessentials.who
+  ping:
+    description: Check a player's latency.
+    usage: /ping <player>
+    permission: adminessentials.ping
+  coords:
+    description: View coordinates of a player.
+    usage: /coords <player>
+    permission: adminessentials.coords
+  weather:
+    description: Change the world weather.
+    usage: /weather <clear|rain|thunder>
+    permission: adminessentials.weather
+  time:
+    description: Change the world time.
+    usage: /time <day|night|set <ticks>>
+    permission: adminessentials.time
+  tp:
+    description: Teleport a player to another player.
+    usage: /tp <player> <target>
+    permission: adminessentials.tp
+  tphere:
+    description: Bring a player to your location.
+    usage: /tphere <player>
+    permission: adminessentials.tphere
+  setspawn:
+    description: Set the world spawn.
+    usage: /setspawn
+    permission: adminessentials.setspawn
+  spawn:
+    description: Teleport to the world spawn.
+    usage: /spawn
+    permission: adminessentials.spawn
+  warp:
+    description: Teleport to a predefined location.
+    usage: /warp <name>
+    permission: adminessentials.warp
+  warps:
+    description: List all available warps.
+    usage: /warps
+    permission: adminessentials.warps
+  inspect:
+    description: View a player's inventory read-only.
+    usage: /inspect <player>
+    permission: adminessentials.inspect
+  rollback:
+    description: Undo block changes by a player or area.
+    usage: /rollback <player|area>
+    permission: adminessentials.rollback
+  alert:
+    description: Send admin alerts to all players.
+    usage: /alert <message>
+    permission: adminessentials.alert
+  clear:
+    description: Clear a player's inventory.
+    usage: /clear <player>
+    permission: adminessentials.clear
+  god:
+    description: Toggle god mode for a player.
+    usage: /god <player>
+    permission: adminessentials.god
+permissions:
+  adminessentials.*:
+    description: All AdminEssentials permissions.
+    default: op
+    children:
+      adminessentials.vanish: true
+      adminessentials.freeze: true
+      adminessentials.kick: true
+      adminessentials.ban: true
+      adminessentials.tempban: true
+      adminessentials.mute: true
+      adminessentials.unmute: true
+      adminessentials.jail: true
+      adminessentials.unjail: true
+      adminessentials.motd: true
+      adminessentials.who: true
+      adminessentials.ping: true
+      adminessentials.coords: true
+      adminessentials.weather: true
+      adminessentials.time: true
+      adminessentials.tp: true
+      adminessentials.tphere: true
+      adminessentials.setspawn: true
+      adminessentials.spawn: true
+      adminessentials.warp: true
+      adminessentials.warps: true
+      adminessentials.inspect: true
+      adminessentials.rollback: true
+      adminessentials.alert: true
+      adminessentials.clear: true
+      adminessentials.god: true
